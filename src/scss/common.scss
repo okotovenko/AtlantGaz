@@ -1,0 +1,160 @@
+// Тут зберігаються загальні (повторювані) блоки та загальна структура сайту
+// Тобто, блоки, які можна перевикористовувати декілька разів
+// на проекті
+// title, subtitle та ін.
+
+.page {
+
+	.price {}
+
+	.advantages {}
+
+	.forgot {}
+
+	.choise {}
+
+	.rewiews {}
+
+	.questions {}
+
+	.question {}
+
+	.order {}
+
+}
+
+.title {
+	font-family: 'Russo One';
+	@include adaptiveValue("font-size", 36, 28);
+	line-height: prc(43, 36);
+	text-align: center;
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+
+.title-white {
+	color: $secondarydColor;
+
+	& span {
+		color: $mainColor;
+	}
+}
+
+.arrowForPage {
+	position: absolute;
+	left: calc(50% - 50px);
+	bottom: 5%;
+	width: 100px;
+	height: 65px;
+}
+
+.arrowForPage-s {
+	position: relative;
+	animation: arrowAnimationS 1.4s ease-in-out infinite alternate;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: 47px;
+		top: 30px;
+		border: 1px solid $mainColor;
+		background-color: $mainColor;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+		transform-origin: right;
+	}
+
+	&::after {
+		transform: rotate(135deg);
+		transform-origin: right;
+	}
+}
+
+
+.arrowForPage-m {
+	position: relative;
+	animation: arrowAnimationM 1.4s ease-in-out infinite alternate;
+
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: 65px;
+		top: 55px;
+		left: -18px;
+		border: 1px solid $mainColor;
+		background-color: $mainColor;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+		transform-origin: right;
+	}
+
+	&::after {
+		transform: rotate(135deg);
+		transform-origin: right;
+	}
+}
+
+.arrowForPage-l {
+	position: relative;
+	animation: arrowAnimationL 1.4s ease-in-out infinite alternate;
+
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: 85px;
+		top: 80px;
+		left: -38px;
+		border: 1px solid $mainColor;
+		background-color: $mainColor;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+		transform-origin: right;
+	}
+
+	&::after {
+		transform: rotate(135deg);
+		transform-origin: right;
+	}
+}
+
+@keyframes arrowAnimationS {
+	0% {
+		transform: translateY(rem(-5));
+	}
+
+	100% {
+		transform: translateY(rem(0));
+	}
+}
+
+@keyframes arrowAnimationM {
+	0% {
+		transform: translateY(rem(-30));
+	}
+
+	100% {
+		transform: translateY(rem(0));
+	}
+}
+
+@keyframes arrowAnimationL {
+	0% {
+		transform: translateY(rem(-55));
+	}
+
+	100% {
+		transform: translateY(rem(0));
+	}
+}

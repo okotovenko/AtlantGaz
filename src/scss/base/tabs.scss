@@ -1,0 +1,128 @@
+.tabs {
+
+	&__navigation {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: rem(24);
+
+		@media (max-width:$mobile) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__title {
+		width: 25%;
+		max-width: 164px;
+		min-width: 140px;
+		background: rgba(241, 241, 241, 0.2);
+		border-radius: 20px;
+		text-align: center;
+	}
+
+	&__content {
+		width: 100%;
+		height: 100%;
+		@include adaptiveValue("min-height", 300, 200);
+		max-height: 260px;
+		max-width: 596px;
+		position: relative;
+	}
+
+	&__box {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__body {
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transition: 1s cubic-bezier(0.5, -0.03, 0.58, 1.08) opacity;
+		}
+	}
+
+	.tabs__body-car-1 {
+		background: url(../../img/choise/01.png) center / 200% no-repeat;
+	}
+
+	.tabs__body-car-2 {
+		background: url(../../img/choise/02.png) center / 200% no-repeat;
+	}
+
+	.tabs__body-car-3 {
+		background: url(../../img/choise/03.png) center / 200% no-repeat;
+	}
+
+	.tabs__body-car-4 {
+		background: url(../../img/choise/04.png) center / 200% no-repeat;
+	}
+
+	.tabs__body-1 {
+		width: 100%;
+		height: 100%;
+		max-width: 297px;
+		transform: rotateY(90deg) translateX(297px);
+
+	}
+
+	.tabs__body-2 {
+		width: 100%;
+		height: 100%;
+		max-width: 297px;
+		transform: rotateY(90deg) translateX(-297px);
+	}
+
+	.tabs__body-1:after {
+		background: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .2));
+	}
+
+	.tabs__body-2:after {
+		background: linear-gradient(to left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .7));
+	}
+}
+
+.tabs__box.active {
+
+	.tabs__body {
+		transform: rotateX(0deg);
+		transition: .5s linear transform;
+		transition: 1s cubic-bezier(0.5, -0.03, 0.58, 1.08) transform;
+		overflow: hidden;
+		transform-origin: bottom;
+	}
+
+	.tabs__body:after {
+		opacity: 0;
+		transition-delay: .2s;
+	}
+
+	.tabs__body-1 {
+		background-position: 0% 0%;
+		transform-origin: left;
+	}
+
+	.tabs__body-2 {
+		background-position: 100% 0%;
+		transform-origin: right;
+	}
+
+	.tabs__body-1:after {
+		background: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, .9));
+	}
+
+	.tabs__body-2:after {
+		background: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5));
+	}
+}

@@ -1,0 +1,31 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons.eot?4k5yxj');
+	src: url('../fonts/icons.eot?4k5yxj#iefix') format('embedded-opentype'),
+		url('../fonts/icons.ttf?4k5yxj') format('truetype'),
+		url('../fonts/icons.woff?4k5yxj') format('woff'),
+		url('../fonts/icons.svg?4k5yxj#icons') format('svg');
+}
+
+._icon-arrow:before {
+	content: "\e900";
+}

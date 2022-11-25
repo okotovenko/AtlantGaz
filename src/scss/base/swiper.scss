@@ -1,0 +1,144 @@
+.swiper {
+	overflow: hidden;
+	width: 100%;
+}
+
+.swiper-wrapper {
+	// width: 100%;
+	height: 100%;
+	box-sizing: content-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+}
+
+.swiper-vertical {
+	.swiper-wrapper {
+		flex-direction: column;
+	}
+}
+
+.swiper-autoheight {
+	.swiper-wrapper {
+		align-items: flex-start;
+	}
+}
+
+.swiper-initialized {
+	.swiper-slide {
+		flex-shrink: 0;
+		// transition-property: transform;
+	}
+}
+
+.swiper-android {
+
+	.swiper-slide,
+	.swiper-wrapper {
+		transform: translate3d(0px, 0, 0);
+	}
+}
+
+.swiper-button-lock {
+	display: none !important;
+}
+
+.swiper-slide {}
+
+.swiper-pagination {
+
+	& span.swiper-pagination-bullet {
+		width: 61px;
+		height: 18px;
+		background: rgba(241, 241, 241, 0.2);
+		border-radius: 20px;
+	}
+
+	& span.swiper-pagination-bullet-active {
+		background: #2194FF;
+	}
+}
+
+.arrowForPage {}
+
+.arrowForPage-prev,
+.arrowForPage-next {
+	position: absolute;
+	top: calc(50% + 50px);
+	z-index: 10;
+
+	&::before,
+	&::after {
+		border: 1px solid rgba(241, 241, 241, 0.2);
+		background-color: rgba(241, 241, 241, 0.2);
+	}
+}
+
+.arrowForPage-prev,
+.arrowForPage-next {
+
+	.arrowForPage-s {
+
+		&::before,
+		&::after {
+			left: 0px;
+			border: 1px solid rgba(241, 241, 241, 0.2);
+			background-color: rgba(241, 241, 241, 0.2);
+		}
+	}
+
+	.arrowForPage-m {
+
+		&::before,
+		&::after {
+			left: -18px;
+			border: 1px solid rgba(241, 241, 241, 0.2);
+			background-color: rgba(241, 241, 241, 0.2);
+		}
+	}
+
+	.arrowForPage-l {
+
+		&::before,
+		&::after {
+			left: -36px;
+			border: 1px solid rgba(241, 241, 241, 0.2);
+			background-color: rgba(241, 241, 241, 0.2);
+		}
+	}
+
+	@media (any-hover:hover) {
+		&:hover * {
+
+			&::before,
+			&::after {
+				border: 1px solid #2194FF;
+				background-color: #2194FF;
+			}
+
+		}
+	}
+}
+
+.arrowForPage-prev {
+	transform: rotate(90deg);
+	left: 25px;
+
+
+	@media (max-width: em(500)) {
+		display: none;
+	}
+}
+
+.arrowForPage {
+	@media (max-width: em(500)) {
+		display: none;
+		background-color: #fff;
+	}
+}
+
+.arrowForPage-next {
+	transform: rotate(-90deg);
+	right: 25px;
+}
