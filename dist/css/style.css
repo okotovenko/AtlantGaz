@@ -414,13 +414,31 @@ body {
   transition: 1s cubic-bezier(0.5, -0.03, 0.58, 1.08) opacity;
 }
 .no-webp .tabs .tabs__body-car-1{
-  background: url(../img/choise/01.png) center/200% no-repeat; }
+  background: url(../img/choise/01.png); }
+.tabs .tabs__body-car-1 {
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .no-webp .tabs .tabs__body-car-2{
-  background: url(../img/choise/02.png) center/200% no-repeat; }
+  background: url(../img/choise/02.png); }
+.tabs .tabs__body-car-2 {
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .no-webp .tabs .tabs__body-car-3{
-  background: url(../img/choise/03.png) center/200% no-repeat; }
+  background-image: url(../img/choise/03.png); }
+.tabs .tabs__body-car-3 {
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
 .no-webp .tabs .tabs__body-car-4{
-  background: url(../img/choise/04.png) center/200% no-repeat; }
+  background: url(../img/choise/04.png); }
+.tabs .tabs__body-car-4 {
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
 .tabs .tabs__body-1 {
   width: 100%;
   height: 100%;
@@ -5015,10 +5033,10 @@ button.swiper-pagination-bullet {
   scroll-snap-align: center center;
 }
 
-.webp .tabs .tabs__body-car-1{ background: url(../img/choise/01.webp) center/200% no-repeat; }
+.webp .tabs .tabs__body-car-1{ background: url(../img/choise/01.webp); }
 
-.webp .tabs .tabs__body-car-2{ background: url(../img/choise/02.webp) center/200% no-repeat; }
+.webp .tabs .tabs__body-car-2{ background: url(../img/choise/02.webp); }
 
-.webp .tabs .tabs__body-car-3{ background: url(../img/choise/03.webp) center/200% no-repeat; }
+.webp .tabs .tabs__body-car-3{ background-image: url(../img/choise/03.webp); }
 
-.webp .tabs .tabs__body-car-4{ background: url(../img/choise/04.webp) center/200% no-repeat; }
+.webp .tabs .tabs__body-car-4{ background: url(../img/choise/04.webp); }

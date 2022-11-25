@@ -55,22 +55,34 @@
 
 	.tabs__body-car-1 {
 		// background: url(../../img/choise/01.png) center / 200% no-repeat;
-		background: url(../img/choise/01.png) center / 200% no-repeat;
+		background: url(../img/choise/01.png);
+		background-size: 200%;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	.tabs__body-car-2 {
 		// background: url(../../img/choise/02.png) center / 200% no-repeat;
-		background: url(../img/choise/02.png) center / 200% no-repeat;
+		background: url(../img/choise/02.png);
+		background-size: 200%;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	.tabs__body-car-3 {
 		// background: url(../../img/choise/03.png) center / 200% no-repeat;
-		background: url(../img/choise/03.png) center / 200% no-repeat;
+		background-image: url(../img/choise/03.png);
+		background-size: 200%;
+		background-repeat: no-repeat;
+		// background-position: center;
 	}
 
 	.tabs__body-car-4 {
 		// background: url(../../img/choise/04.png) center / 200% no-repeat;
-		background: url(../img/choise/04.png) center / 200% no-repeat;
+		background: url(../img/choise/04.png);
+		background-size: 200%;
+		background-repeat: no-repeat;
+		// background-position: center;
 	}
 
 	.tabs__body-1 {
