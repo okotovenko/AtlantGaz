@@ -72,10 +72,7 @@ body {
 	font-size: $fontSize;
 	font-weight: $fontWeight;
 	background-color: $mainColorBackground;
-
-	@media (max-height: em(768)) {
-		overflow: auto !important;
-	}
+	// overflow: auto !important;
 
 	// Заблокований скрол
 	.lock & {

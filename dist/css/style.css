@@ -105,11 +105,6 @@ body {
   font-weight: 400;
   background-color: #222222;
 }
-@media (max-height: 48em) {
-  body {
-    overflow: auto !important;
-  }
-}
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
@@ -513,7 +508,6 @@ body {
 }
 
 .fp-init body {
-  overflow: hidden;
   -ms-touch-action: none;
       touch-action: none;
   -ms-scroll-chaining: none;
