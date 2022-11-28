@@ -4572,12 +4572,26 @@
     }));
     document.querySelector(".tabs__title").click();
     function animateAdvantagesImg() {
-        const advantagesImg = document.querySelectorAll(".advantages__img");
-        let time = 0;
-        for (let i = 0; i <= advantagesImg.length; i++) {
-            advantagesImg[i].style = `animation-delay: ${time}s`;
-            time += .5;
+        if (window.innerWidth >= 768) {
+            const advantagesImg = document.querySelectorAll(".advantages__img");
+            let time = 0;
+            for (let i = 0; i <= advantagesImg.length; i++) {
+                advantagesImg[i].style = `animation-delay: ${time}s`;
+                time += .5;
+            }
         }
+    }
+    const sectionDataFpSection = document.querySelectorAll("[data-fp-section]");
+    const sectionDataFp = document.querySelector("[data-fp]");
+    if (window.innerHeight < 768) {
+        sectionDataFp.removeAttribute("data-fp");
+        sectionDataFpSection.forEach((function(item) {
+            item.removeAttribute("data-fp-section");
+            item.removeAttribute("data-fp-id");
+            item.removeAttribute("style");
+            item.classList.remove("active-section");
+            item.classList.remove("next-section");
+        }));
     }
     window["FLS"] = true;
     isWebp();

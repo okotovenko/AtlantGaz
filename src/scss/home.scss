@@ -170,6 +170,7 @@
 	}
 }
 
+
 //===========================================advantages=========================================================
 
 .advantages {
@@ -255,15 +256,27 @@
 }
 
 .advantages__container-small._watcher-view {
-	.advantages__img {
-		animation: advantages 2s ease forwards;
-	}
-
 	.title {
 		transform: translate(0px, 0px);
 		opacity: 1;
 	}
+
+	@media (min-width: $mobile) {
+		.advantages__img {
+			animation: advantages 2s ease forwards;
+		}
+	}
 }
+
+@media (max-width: $mobile) {
+	.advantages__item._watcher-view {
+		.advantages__img {
+			animation: advantages 2s ease forwards;
+		}
+	}
+}
+
+
 
 //===========================================forgot=========================================================
 
@@ -420,6 +433,7 @@
 	@include adaptiveValue("padding-bottom", 46, 20);
 	display: flex;
 	align-items: center;
+	position: relative;
 
 	&__container-small {
 		display: flex;

@@ -47,6 +47,10 @@
 	bottom: 5%;
 	width: 100px;
 	height: 65px;
+
+	@media (max-height: em(746)) {
+		display: none;
+	}
 }
 
 .arrowForPage-s {

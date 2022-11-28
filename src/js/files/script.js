@@ -29,12 +29,33 @@ tabsButton.forEach(function (item) {
 
 document.querySelector('.tabs__title').click();
 
-// Анімація почергового повороту зображень в блоці "Аdvantages"
+// Анімація почергового повороту зображень в блоці "Аdvantages" на розширеннях, які більше ніж 768рх
 export function animateAdvantagesImg() {
-	const advantagesImg = document.querySelectorAll('.advantages__img');
-	let time = 0;
-	for (let i = 0; i <= advantagesImg.length; i++) {
-		advantagesImg[i].style = `animation-delay: ${time}s`;
-		time += 0.5;
+	if (window.innerWidth >= 768) {
+		const advantagesImg = document.querySelectorAll('.advantages__img');
+		let time = 0;
+		for (let i = 0; i <= advantagesImg.length; i++) {
+			advantagesImg[i].style = `animation-delay: ${time}s`;
+			time += 0.5;
+		}
 	}
+};
+
+// Видалення атрибуту data-fp-section на розширеннях, які менше ніж 700рх
+const sectionDataFpSection = document.querySelectorAll("[data-fp-section]");
+const sectionDataFp = document.querySelector("[data-fp]");
+
+if (window.innerHeight < 768) {
+	sectionDataFp.removeAttribute("data-fp");
+	// sectionDataFp.classList.remove('slider-mode');
+	sectionDataFpSection.forEach(function (item) {
+		item.removeAttribute("data-fp-section");
+		item.removeAttribute("data-fp-id");
+
+		item.removeAttribute("style");
+		item.classList.remove("active-section");
+		item.classList.remove("next-section");
+	})
 }
+
+

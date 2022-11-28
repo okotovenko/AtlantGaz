@@ -105,6 +105,11 @@ body {
   font-weight: 400;
   background-color: #222222;
 }
+@media (max-height: 48em) {
+  body {
+    overflow: auto !important;
+  }
+}
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
@@ -709,6 +714,11 @@ body {
   bottom: 5%;
   width: 100px;
   height: 65px;
+}
+@media (max-height: 46.625em) {
+  .arrowForPage {
+    display: none;
+  }
 }
 
 .arrowForPage-s {
@@ -2188,17 +2198,25 @@ body {
      text-overflow: ellipsis;
 }
 
-.advantages__container-small._watcher-view .advantages__img {
-  -webkit-animation: advantages 2s ease forwards;
-          animation: advantages 2s ease forwards;
-}
 .advantages__container-small._watcher-view .title {
   -webkit-transform: translate(0px, 0px);
       -ms-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 1;
 }
+@media (min-width: 47.99875em) {
+  .advantages__container-small._watcher-view .advantages__img {
+    -webkit-animation: advantages 2s ease forwards;
+            animation: advantages 2s ease forwards;
+  }
+}
 
+@media (max-width: 47.99875em) {
+  .advantages__item._watcher-view .advantages__img {
+    -webkit-animation: advantages 2s ease forwards;
+            animation: advantages 2s ease forwards;
+  }
+}
 .forgot {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2674,6 +2692,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 @media (min-width: 73.125em) {
   .rewiews {

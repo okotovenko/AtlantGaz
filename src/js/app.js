@@ -216,5 +216,6 @@ import "./libs/dynamic_adapt.js";
 // import "./files/script.js";
 import * as myScript from "./files/script.js";
 myScript.animateAdvantagesImg();
+// myScript.removeDataFpSection();
 
 //============================================================================================================================================================================================================================================
