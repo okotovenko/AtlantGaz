@@ -2017,6 +2017,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: auto;
 }
 @media (min-width: 73.125em) {
   .advantages {
@@ -2222,6 +2223,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  overflow: auto;
 }
 @media (min-width: 73.125em) {
   .forgot {
@@ -2490,6 +2492,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: auto;
 }
 @media (min-width: 73.125em) {
   .choise {
@@ -2693,6 +2696,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  overflow: auto;
 }
 @media (min-width: 73.125em) {
   .rewiews {
@@ -2891,6 +2895,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: auto;
 }
 @media (min-width: 73.125em) {
   .questions {
@@ -3113,6 +3118,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: auto;
 }
 @media (min-width: 73.125em) {
   .question {
@@ -3469,6 +3475,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: auto;
 }
 @media (min-width: 73.125em) {
   .order {

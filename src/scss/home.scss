@@ -178,6 +178,7 @@
 	align-items: center;
 	@include adaptiveValue("padding-top", 46, 20);
 	@include adaptiveValue("padding-bottom", 46, 20);
+	overflow: auto;
 
 	&__container-small {
 		display: flex;
@@ -285,6 +286,7 @@
 	@include adaptiveValue("padding-bottom", 46, 20);
 	display: flex;
 	position: relative;
+	overflow: auto;
 
 	&__container-small {
 		align-self: center;
@@ -377,6 +379,7 @@
 	@include adaptiveValue("padding-bottom", 46, 20);
 	display: flex;
 	align-items: center;
+	overflow: auto;
 
 	&__container-small {
 		display: flex;
@@ -434,6 +437,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
+	overflow: auto;
 
 	&__container-small {
 		display: flex;
@@ -543,6 +547,7 @@
 	@include adaptiveValue("padding-bottom", 46, 20);
 	display: flex;
 	align-items: center;
+	overflow: auto;
 
 	&__container {
 		display: flex;
@@ -627,6 +632,7 @@
 	@include adaptiveValue("padding-bottom", 46, 20);
 	display: flex;
 	align-items: center;
+	overflow: auto;
 
 	&__container-small {
 		display: flex;
@@ -793,6 +799,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	overflow: auto;
 
 	&__container {
 		flex: 1 1 auto;
