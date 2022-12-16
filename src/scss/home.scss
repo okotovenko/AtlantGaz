@@ -379,7 +379,7 @@
 	@include adaptiveValue("padding-bottom", 46, 20);
 	display: flex;
 	align-items: center;
-	// overflow: auto;
+	overflow-y: auto;
 
 	&__container-small {
 		display: flex;
@@ -441,7 +441,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	// overflow: auto;
+	overflow-y: auto;
 
 	&__container-small {
 		display: flex;
