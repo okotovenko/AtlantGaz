@@ -379,7 +379,7 @@
 	@include adaptiveValue("padding-bottom", 46, 20);
 	display: flex;
 	align-items: center;
-	overflow: auto;
+	// overflow: auto;
 
 	&__container-small {
 		display: flex;
@@ -405,6 +405,10 @@
 		bottom: -20%;
 		white-space: nowrap;
 		left: calc(((100% - 227px) / 2));
+
+		@media (max-width:$mobile) {
+			bottom: -5%;
+		}
 	}
 
 	@keyframes choise {
@@ -433,11 +437,11 @@
 
 .rewiews {
 	@include adaptiveValue("padding-top", 46, 20);
-	@include adaptiveValue("padding-bottom", 46, 20);
+	@include adaptiveValue("padding-bottom", 46, 30);
 	display: flex;
 	align-items: center;
 	position: relative;
-	overflow: auto;
+	// overflow: auto;
 
 	&__container-small {
 		display: flex;
@@ -477,6 +481,10 @@
 
 	&__pagination {
 		bottom: -40px !important;
+
+		@media (max-width:$mobile) {
+			bottom: -25px !important;
+		}
 	}
 
 	&__left {

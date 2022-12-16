@@ -2486,7 +2486,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: auto;
 }
 @media (min-width: 73.125em) {
   .choise {
@@ -2650,6 +2649,11 @@ body {
     padding-bottom: 0.9375rem;
   }
 }
+@media (max-width: 47.99875em) {
+  .choise__button {
+    bottom: -5%;
+  }
+}
 @-webkit-keyframes choise {
   0% {
     -webkit-transform: rotateY(60deg);
@@ -2690,7 +2694,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  overflow: auto;
 }
 @media (min-width: 73.125em) {
   .rewiews {
@@ -2720,20 +2723,20 @@ body {
   }
 }
 @media (min-width: 20em) and (max-width: 73.125em) {
-  @supports (padding-bottom: clamp( 1.25rem , 0.6382352941rem  +  3.0588235294vw , 2.875rem )) {
+  @supports (padding-bottom: clamp( 1.875rem , 1.4985294118rem  +  1.8823529412vw , 2.875rem )) {
     .rewiews {
-      padding-bottom: clamp( 1.25rem , 0.6382352941rem  +  3.0588235294vw , 2.875rem );
+      padding-bottom: clamp( 1.875rem , 1.4985294118rem  +  1.8823529412vw , 2.875rem );
     }
   }
-  @supports not (padding-bottom: clamp( 1.25rem , 0.6382352941rem  +  3.0588235294vw , 2.875rem )) {
+  @supports not (padding-bottom: clamp( 1.875rem , 1.4985294118rem  +  1.8823529412vw , 2.875rem )) {
     .rewiews {
-      padding-bottom: calc(1.25rem + 1.625 * (100vw - 20rem) / 53.125);
+      padding-bottom: calc(1.875rem + 1 * (100vw - 20rem) / 53.125);
     }
   }
 }
 @media (max-width: 20em) {
   .rewiews {
-    padding-bottom: 1.25rem;
+    padding-bottom: 1.875rem;
   }
 }
 .rewiews__container-small {
@@ -2821,6 +2824,11 @@ body {
 }
 .rewiews__pagination {
   bottom: -40px !important;
+}
+@media (max-width: 47.99875em) {
+  .rewiews__pagination {
+    bottom: -25px !important;
+  }
 }
 .rewiews__left {
   -webkit-box-flex: 1;
